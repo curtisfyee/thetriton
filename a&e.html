@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Triton</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Vollkorn|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/apple-icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- header bar for desktop-->
+    <nav id="navigation1">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Clears the float for cs -->
+                    <div class="clearfix visible-xs">
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div id="weather"> </div>
+                        <p id="clock"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="index.html">
+                            <div class="theTriton"> The Triton </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <form action="search.html" role="search" class="search-form">
+                            <input type="submit" value="" class="search-submit">
+                            <input type="search" name="q" class="search-text" placeholder="Search" autocomplete="off">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </nav>
+    <div class="nav-wrapper-desktop">
+        <!-- navigation for desktop -->
+        <nav id="navigation">
+            <!-- sections in the navigation bar -->
+            <ul class="navi-section">
+                <!-- add logo here for navi scroll -->
+                <a href="index.html"><img src="images/tritonlogo.svg" class="tritonlogo"></img>
+                </a>
+
+                <li class="dropdown">
+                    <a href="news.html" class="navi-section2">NEWS</a>
+                    <div class="dropdown-content collapse">
+                        <a href="campus.html">CAMPUS NEWS</a>
+                        <a href="#">UC NEWS</a>
+                        <a href="#">FEATURE</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="opinions.html" class="navi-section2">OPINION</a>
+                    <div class="dropdown-content collapse">
+                        <a href="#">EDITORIAL</a>
+                        <a style="text-align: left" href="#">LETTER TO EDITOR</a>
+                        <a href="#">SUBMISSIONS</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="a&e.html" class="navi-section2">A&E</a>
+                    <div class="dropdown-content collapse">
+                        <a style="text-align: left" href="#">THEATRE & DANCE</a>
+                        <a href="#">FILM</a>
+                        <a href="#">LITERATURE</a>
+                        <a href="#">MUSIC</a>
+                        <a href="#">VISUAL ARTS</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="studentlife.html" class="navi-section2">STUDENT LIFE</a>
+                    <div class="dropdown-content collapse">
+                        <a href="#">LISTS</a>
+                        <a href="#">SATIRE</a>
+                        <a href="#">OTHER</a>
+                    </div>
+                </li>
+            </ul>
+    </div>
+    </nav>
+
+
+    <!-- mobile navigation -->
+    <div class="hamburger-container">
+        <nav class="nav">
+            <div class="theTriton">
+                <a href="index.html" class="whitetext">The Triton </a>
+            </div>
+            <ul class="hamburger">
+                <li class="empty"></li>
+                <li class="empty"></li>
+                <li class="empty"></li>
+            </ul>
+            <ul id="menu">
+                <div class="scroll">
+                    <li id="mobilenav_section-title"><a href="news.html">NEWS</a>
+                        <div align="center">
+                            <div class="line"></div>
+                        </div>
+                        <li id="mobilenav_subsection"><a href="campus.html">CAMPUS NEWS</a></li>
+                        <li id="mobilenav_subsection"><a href="#">UC NEWS</a></li>
+                        <li id="mobilenav_subsection"><a href="#">FEATURE</a></li>
+                    </li>
+                    <li id="mobilenav_section-title"><a href="opinions.html">OPINION</a>
+                        <div align="center">
+                            <div class="line"></div>
+                        </div>
+                        <li id="mobilenav_subsection"><a href="#">EDITORIAL</a></li>
+                        <li id="mobilenav_subsection"><a href="#">LETTER TO EDITOR</a></li>
+                        <li id="mobilenav_subsection"><a href="#">SUBMISSIONS</a></li>
+                    </li>
+                    <li id="mobilenav_section-title"><a href="a&e.html">A&E</a>
+                        <div align="center">
+                            <div class="line"></div>
+                        </div>
+                        <li id="mobilenav_subsection"><a href="#"> THEATRE & DANCE</a></li>
+                        <li id="mobilenav_subsection"><a href="#">FILM</a></li>
+                        <li id="mobilenav_subsection"><a href="#">LITERATURE</a></li>
+                        <li id="mobilenav_subsection"><a href="#">MUSIC</a></li>
+                        <li id="mobilenav_subsection"><a href="#">VISUAL ARTS</a></li>
+                    </li>
+                    <li id="mobilenav_section-title"><a href="studentlife.html">STUDENT LIFE</a>
+                        <div align="center">
+                            <div class="line"></div>
+                        </div>
+                        <li id="mobilenav_subsection"><a href="#">LISTS </a></li>
+                        <li id="mobilenav_subsection"><a href="#">SATIRE</a></li>
+                        <li id="mobilenav_subsection"><a href="#">OTHER</a></li>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </div>
+            </ul>
+    </div>
+    </nav>
+
+
+    </br>
+
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a id="homebreadcrumb" href="index.html">HOME</a></li>
+            <li><a href="a&e.html">A&E</a></li>
+        </ul>
+
+
+
+    <p class="sectionhome"> A&E</p>
+    <p class="little-subsections"> <a href="#theatre"> THEATRE & DANCE </a> | <a href='#film'> FILM </a> | <a href='#literature'>LITERATURE </a> | <a href='#music'>MUSIC </a> | <a href='#visual'>VISUAL ARTS </a> </p>
+<br>
+<div class="headerline" id="theatre"> </div>
+<br>
+<h2 class="section_name"> THEATRE & DANCE </h2>
+
+
+
+        <!-- section with 4 articles -->
+        <div class="row">
+            <div class="col-md-7">
+                <div class="#">
+                    <img class="img-responsive" width="100%" src="https://i1.wp.com/triton.news/wp-content/uploads/2017/02/image00.jpg?resize=650%2C400" alt=""> </img>
+                </div>
+            </div>
+            <div class="col-md-5">
+<div class="center-mobile">
+              <p class="subsectiontitle"> Theatre & Dance </p>
+            </div>
+                    <h4>The Vagina Monologues: A New Wave</h4>
+                        <p class="author"> Amarachi Metu | Feb 10, 2017 </p>
+                        <p class="paragraph-hide">There are two things people who plan on watching the Vagina Monologues and HerStories at UCSD should know: one, prepare to hear the word “vagina” more than you would even if you worked in a gynecologist’s office and two, relax.</p>
+
+                    </div>
+                </div>
+            </br>
+            </br>
+        <div class="row">
+            <div class="col-md-4 border-right">
+                <img class="img-responsive" src="images/AE_4.jpg" alt=""> </a>
+                <center>
+                    <p class="subsectiontitle"> Theatre & Dance </p>
+                    <h4> Muir Musical: Bringing New York City To UCSD Through Theatre </h4>
+                    <p class="author"> Ana Magallanes | Apr 7, 2016 </p>
+                </center>
+            </div>
+
+            <div class="col-md-4 border-right">
+                <img class="img-responsive" src="images/AE_3.jpg" alt=""> </a>
+                <center>
+                    <p class="subsectiontitle"> Theatre & Dance </p>
+                    <h4> Jesca Prudencio Crafting Commedia </h4>
+                    <p class="author"> Cecily Swason | Mar 11, 2016 </p>
+                </center>
+            </div>
+
+
+            <div class="col-md-4">
+                <img class="img-responsive" src="images/AE_5.jpg" alt=""> </a>
+                <center>
+                    <p class="subsectiontitle"> Theatre & Dance </p>
+                    <h4> La Bête: What Is Good Art? </h4>
+                    <p class="author"> Cecily Swason | Feb 26, 2016 </p>
+                </center>
+            </div>
+        </div>
+        </br>
+
+
+   <hr id="film">
+<h2 class="section_name">
+      FILM </h2>
+
+        <!-- section with 4 articles -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#">
+                    <center> <img class="img-responsive" src="https://i1.wp.com/triton.news/wp-content/uploads/2016/12/image02-1.jpg?resize=650%2C400" alt="">
+                </a>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="subsectiontitle"> Film </p>
+                        <h4 id="article-big-title"> San Diego Asian Film Festival <br> Brings Taiwan Showcase To UCSD </h4>
+                        <p class="author">Ana Magallanes | Dec 6, 2016 </p>
+                    </div>
+                </div>
+                </center>
+            </div>
+        </div>
+
+
+<hr id="literature">
+
+        <h2 class="section_name">LITERATURE </h2>
+
+
+
+        <!-- section with 4 articles -->
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive" width="100%" src="https://i1.wp.com/triton.news/wp-content/uploads/2017/02/image01-1.jpg?resize=650%2C400" alt="">
+                </a>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <center>
+                        <p class="subsectiontitle"> Literature </p>
+                            <h4 id="article-big-title">The Feminist Bookstand: The Table Reshaping The Culture Of The UCSD Bookstore </h4>
+                            <p class="author"> Amarachi Metu | Feb 16, 2017 </p>
+                        </center>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive" width="100%" src="https://i1.wp.com/triton.news/wp-content/uploads/2017/02/33df1c_8b30635667424c4290387e9b1fc4c093-mv2_d_4000_2621_s_4_2-2.jpg?resize=650%2C400" alt=""> </a>
+            </div>
+            <div class="col-md-6">
+                <center>
+                    <p class="subsectiontitle"> Literature </p>
+                    <h4 id="article-big-title"> SPACES Hosts "Masterpiece In Progress: A Night Of Poetry And Activism" </h4>
+                    <p class="author"> Ana Magallanes | Feb 1, 2017</p>
+                </center>
+            </div>
+
+        </div>
+
+
+<hr id="music">
+       <h2 class="section_name"> MUSIC </h2>
+
+        <!-- section with 4 articles -->
+        <div class="row">
+            <div class="col-md-7">
+                <div class="thelatest">
+                    <img class="img-responsive" width="100%" src="https://i0.wp.com/triton.news/wp-content/uploads/2017/02/zaobpee_vv4-laura-ockel.jpg?resize=650%2C400" alt="">
+                </div>
+            </div>
+
+                    <div class="col-md-5">
+                      <div class="center-mobile">
+                      <p class="subsectiontitle"> Music </p>
+</div>
+                        <h4>A Valentine's Day Playlist For All </h4>
+                        <p class="author"> Ana Magallanes | Feb 14, 2017 </p>
+                        <p class="paragraph-hide">To some, today is a highly anticipated day full of surprises. To others, it is a day of dread. To most, it is just a normal Tuesday. Regardless, R&B always sounds good. Here’s a groovy playlist to celebrate the misfortunes, intricacies, and overall beauty of love.</p>
+                    </div>
+                </div>
+                </br>
+                </br>
+        <!--  3 articles for the Latest section -->
+        <div class="row">
+            <div class="col-md-4 border-right">
+                <img class="img-responsive" src="https://i2.wp.com/triton.news/wp-content/uploads/2017/02/maarjanuut-1.jpg?resize=650%2C400" alt="">
+                <center>
+                    <p class="subsectiontitle"> Music </p>
+                    <h4> The Loft Presents Maarja Nuut: A Contemporary Classic </h4>
+                    <p class="author"> Saunil Dobariya | Feb 7, 2017</p>
+            </div>
+                <div class="col-md-4 border-right">
+                    <img class="img-responsive" src="https://i2.wp.com/triton.news/wp-content/uploads/2016/11/IMG_4470.1-1.jpg?resize=650%2C400" alt="">
+                    <center>
+                        <p class="subsectiontitle"> Music </p>
+                        <h4> Pop Minimalism Perfected: Sales Play The Loft </h4>
+                        <p class="author"> Oliver Engel | Nov 18, 2016 </p>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="https://i0.wp.com/triton.news/wp-content/uploads/2016/09/Press_Photo_2_photoby_Josue_Rivas_2-1.jpg?resize=650%2C400" alt="">
+                    <center>
+                    <p class="subsectiontitle"> Music </p>
+                <h4> A Soulful Start To Fall Quarter: Artpower Brings Chicano Batman To Campus</h4>
+                <p class="author"> Ana Magallanes | Sep 29, 2016 </p>
+
+            </div>
+        </div>
+
+
+        <div class="container">
+        <hr id="visual">
+       <h2 class="section_name"> VISUAL ARTS </h2>
+
+            <div class="row">
+                <div class="col-md-7">
+                <div class="thelatest">
+                    <img class="img-responsive" width="100%" src="https://i0.wp.com/triton.news/wp-content/uploads/2016/05/DSC0715914.jpg?resize=650%2C400" alt="">
+                </div>
+            </div>
+
+                <div class="col-md-5">
+<div class="center-mobile">
+                      <p class="subsectiontitle"> Visual Arts </p>
+                    </div>
+                        <h4>Science And Cinema Join Forces At Filmatic </h4>
+                        <p class="author"> Ana Magallanes | May 12, 2016 </p>
+                        <p class="paragraph-hide">The seemingly different paths of science and film eventually collide to form the art of virtual realities. On May 7, 2016, ArtPower’s Filmatic Festival displayed this collision through a convention full of performances, discussions, interactive exhibits and lab demos. </p>
+                    </div>
+                    </div>
+                    </br>
+                    </br>
+
+                     <!--  3 articles for the Latest section -->
+                    <div class="row">
+                        <div class="col-md-4 border-right">
+                            <img class="img-responsive" src="https://i0.wp.com/triton.news/wp-content/uploads/2016/04/DSF7473-1.jpg?resize=650%2C400" alt=""> </a>
+                            <center>
+                                <p class="subsectiontitle"> Visual Arts </p>
+                                <h4> Traveling In Circles </h4>
+                                <p class="author"> Cecily Swason | April 21, 2016 </p>
+                            </center>
+                        </div>
+
+                        <div class="col-md-4 border-right">
+                            <img class="img-responsive" src="images/AE_2.jpg" alt=""> </a>
+                            <center>
+                                <p class="subsectiontitle"> Visual Arts </p>
+                                <h4> Student Spotlight: Nicolette Valicenti And Lauren Mutschler</h4>
+                                <p class="author"> Oliver Engel | Feb 29, 2016</p>
+                            </center>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <a href="#">
+                                <img class="img-responsive" src="images/AE_1.jpg" alt=""> </a>
+                            <center>
+                                <p class="subsectiontitle"> Visual Arts </p>
+                                <h4> Find Your Footing </h4>
+                                <p class="author"> Cecily Swason | Jan 28, 2016 </p>
+                            </center>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="subscribe">
+                        <form action="//news.us14.list-manage.com/subscribe/post?u=a8b171812d49ace19d1357277&amp;id=036c1915ae" method="post" name="sign up for beta form">
+                            <div class="description">
+                                <p>Stay informed. </br>Subscribe to our email list.</p>
+                            </div>
+                            <div class="input2">
+                                <input type="text" class="button" id="email2" name="email" placeholder="EMAIL">
+                                <input type="submit" class="button" id="submit" value="SUBSCRIBE">
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- JavaScript files -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                    <script type="text/javascript" src="js/index.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+
+
+</body>
+
+
+
+
+<div class="footerline"> </div>
+<!-- footer -->
+
+<body>
+    <div class="content">
+    </div>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="container2">
+                    <div class="col-sm-3">
+                        <h5><a href="aboutus.html"> ABOUT </a></h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5><a href="contactus.html">CONTACT US</a></h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5><a href="makeasubmission.html">SUBMIT A STORY</a></h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5><a href="jobs.html">JOBS</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="socialbtns">
+                        <li><a href="https://www.facebook.com/thetritonnews/" class="facebook"><i class="fa fa-lg fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/Triton_News/" class="twitter"><i class="fa fa-lg fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/triton_news/" class="instagram"><i class="fa fa-lg fa-instagram"></i></a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-copyright">
+        <p>Content Copyright © 2016-2017 The Triton. The Triton is not in anyway affiliated with UC San Diego and the opinions expressed therein are not the overall public opinions of UCSD, ASUCSD, or our staff. Materials produced by The Triton do not reflect
+            the views of the Regents of the University of California and the Regents do not endorse, warrant, or otherwise take responsibility for said content. Editorials represent the majority opinion of The Triton Editorial Board. </p>
+    </div>
+    </div>
+</body>
+
+</div>
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+</html>
